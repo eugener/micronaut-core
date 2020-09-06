@@ -1,0 +1,36 @@
+plugins {
+    id 'scala'
+}
+
+ext {
+    scalaBase = '2.13'
+    scalaVersion = scalaBase + '.3'
+}
+
+dependencies {
+    api project(":inject")
+    api project(':aop')
+
+//    implementation "org.scala-lang:scala-library:$scalaVersion"
+    implementation "org.scala-lang:scala-compiler:$scalaVersion"
+
+//    api dependencyModuleVersion("groovy", "groovy")
+
+//    testImplementation 'javax.validation:validation-api:1.1.0.Final'
+//    testImplementation "org.hibernate:hibernate-core:5.4.21.Final"
+//    testImplementation 'org.hibernate:hibernate-validator:6.1.5.Final'
+//    testRuntimeOnly 'org.glassfish.web:el-impl:2.2.1-b05'
+//    testRuntimeOnly 'org.glassfish:javax.el:3.0.1-b11'
+//    testImplementation project(":http-server-netty")
+//    testImplementation project(":http-client")
+//    testImplementation project(":validation")
+//    testImplementation 'org.neo4j.driver:neo4j-java-driver:1.4.5'
+//    testImplementation dependencyModuleVersion("groovy", "groovy-json")
+}
+
+//test {
+//    exclude '**/*$_closure*'
+//}
+
+//compileTestGroovy.groovyOptions.forkOptions.jvmArgs = ['-Xdebug', '-Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=5005']
+//compileGroovy.groovyOptions.forkOptions.jvmArgs = ['-Xdebug', '-Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=5005']

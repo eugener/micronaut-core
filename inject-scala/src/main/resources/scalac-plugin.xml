@@ -1,0 +1,4 @@
+<plugin>
+    <name>MicronautInjectScala</name>
+    <classname>io.micronaut.ast.scala.InjectScalaPlugin</classname>
+</plugin>
